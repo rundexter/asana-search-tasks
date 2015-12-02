@@ -101,9 +101,9 @@ module.exports = {
 
             this.apiRequest('get', 'projects/' + step.input('projectId').first() + '/tasks', {}, auth, function (error, responce, body) {
 
-                if (error) {
+                if (error || body.errors) {
 
-                    this.fail(error);
+                    this.fail(error || body.errors);
                 } else {
 
                     this.complete(this.pickResult(body, globalPickResult));
