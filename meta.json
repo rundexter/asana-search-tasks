@@ -12,8 +12,12 @@
     //Required. Outputs the module emits.
     "outputs": [
         {
-            "id": "data",
-            "title":"Tasks array"
+            "id": "id",
+            "title":"Task id"
+        },
+        {
+            "id": "name",
+            "title":"Task name"
         }
     ],
     "title": "Asana Search Tasks" /* Required.A display name for the module */
