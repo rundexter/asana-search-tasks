@@ -20,6 +20,9 @@
             "title":"Task name"
         }
     ],
+    "providers": [{
+        "name": "asana"
+    }],
     "icon": "tasks",
-    "title": "Asana Search Tasks" /* Required.A display name for the module */
+    "title": "Asana Search Tasks"
 }
